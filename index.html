@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Snake</h1>
+
+      <div class="container-flex">
+        <div class="section controls">
+          <p class="controls-text">Map size:</p>
+          <button class="btn resize-btn" id="resize-btn">Medium</button>
+          <br />
+          <p class="controls-text">New Game!</p>
+          <button class="btn start-btn" id="start-btn">Start</button>
+          <br />
+          <p class="controls-description">
+            Use WASD or the arrow keys to control the snake and eat as many aplles as
+            you can
+          </p>
+        </div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="section scores">
+          <h2 class="score-display" id="score-display">
+            Score: <span class="score" id="score"></span>
+          </h2>
+          <div class="leaderboard">
+            <h3>Top Scores</h3>
+            <p><span id="leaderboard-score">0000</span></p>
+            <p><span id="leaderboard-score">0000</span></p>
+            <p><span id="leaderboard-score">0000</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

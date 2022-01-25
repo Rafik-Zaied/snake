@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+
+.title {
+  font-size: 2.5rem;
+  padding: 1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.controls-description {
+  font-size: 0.9rem;
+}
+
+.score-display {
+  font-size: 1.6rem;
+}
+
+/* LAYOUT */
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 1em;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #a6a0db;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  background-color: #c7c5eb;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  border-radius: 6px;
+  min-height: 96vh;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  width: 400px;
+  height: 400px;
+  border: solid 1px black;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.btn,
+.score-display {
+  margin: 0 0 1.5em;
+}
+
+.section {
+  padding: 1em;
+  min-width: 25%;
+  max-width: 25%;
+}
+
+.btn {
+  font-family: inherit;
+  width: 9em;
+  height: 3em;
+  border-radius: 6px;
+  border-color: #f7e660;
+  background-color: #ebe6ae;
+}
+
+.snake {
+  background-color: #504e91;
+}
+
+.apple {
+  background-image: url(../img/apple.png);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title,
+  .section {
+    min-width: 90%;
+    margin-bottom: 0;
+  }
+
+  .grid {
+    margin-block: 1em;
+  }
+}
