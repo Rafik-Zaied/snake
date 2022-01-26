@@ -1,6 +1,6 @@
 # snake
 
-My version of the classic game snake
+My version of the retro game snake
 
 ## Built With
 * HTML
